@@ -101,18 +101,7 @@ public class Agenda {
              telefono = s.nextInt();
              
              agenda = addContacto(agenda, new Contacto(nombre, telefono));
-            /* 
-            for(int i = 0; i<agenda.length; i++){
-                 if (agenda[i] == null){
-                        agenda[i] = new Contacto(nombre, telefono);
-                      break;  
-                  }
-                     
-                     
-                 }
-            */
-            
-             
+    
         return agenda;
     }
          public static Contacto[] addContacto(Contacto[] agenda, Contacto contact){
