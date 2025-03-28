@@ -39,7 +39,7 @@ public class Agenda {
         Contacto[] busqueda = new Contacto[0];
          // cargar datos del fichero
          agenda = leerFichero(agenda);
-         
+         mostrarTodos(agenda);
         
         //mostramos el menú
         mostrarMenu();
