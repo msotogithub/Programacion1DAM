@@ -15,19 +15,21 @@ public class UD11T3 {
 
 
     public static void main(String[] args) {
+        /*         
         int[] t1 = {3,7,9};
         int[] t2 = {1,5,10};
         int[] t3 = {12, 13, 15};
         int[] t4 = {20, 29};
-        
-        String[] nombresFicheros = {"Fichero1.dat","Fichero2.dat","Fichero3.dat", "Fichero4.dat"};
-      
-       /* 
+  
         generaFicheros(t1,"Fichero1.dat");
         generaFicheros(t2,"Fichero2.dat");
         generaFicheros(t3,"Fichero3.dat");
         generaFicheros(t4,"Fichero4.dat");
         */
+        
+        String[] nombresFicheros = {"Fichero1.dat","Fichero2.dat","Fichero3.dat", "Fichero4.dat"};
+      
+       
        for(String nombre: nombresFicheros){
            leeFichero(nombre);
        }
