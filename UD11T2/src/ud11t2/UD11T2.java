@@ -38,17 +38,13 @@ public class UD11T2 {
     
     
     
-    public static void main(String[] args) {
-        
+    public static void main(String[] args) {        
         Cliente[] tablaClientes = new Cliente[0];
         Scanner sc = new Scanner(System.in);
         int opcion = 0;
         boolean salir = false;
-        tablaClientes = leerFichero("Clientes.dat");
-        
-        mostrarMenu();
-       
-        
+        tablaClientes = leerFichero("Clientes.dat");        
+        mostrarMenu();               
         while(!salir){
           opcion = sc.nextInt(); 
           switch (opcion){
@@ -68,18 +64,15 @@ public class UD11T2 {
                   System.out.println(Arrays.toString(tablaClientes));
                   mostrarMenu();
               }
-              case 5 -> { // salir
-                  System.out.println("Guardamos datos y salimos");
+              case 5 -> { // salir                  
                   guardarFichero("Clientes.dat",tablaClientes);
+                  salir = true;
               }
               default -> {
                   System.out.println("Introduzca una opción válida");
               }
           }
-        }
-        
-        
-        
+        }       
     }
     
     /********************************************************************
@@ -126,10 +119,11 @@ public class UD11T2 {
     public static void mostrarMenu(){
         System.out.println("**************************************");
         System.out.println("Seleccione una opción: ");
-        System.out.println("1 - Añadir nuevo cliente.");
-        System.out.println("2 - Modificar datos.");
-        System.out.println("3 - Dar de baja cliente.");
-        System.out.println("4 - Listar los clientes.");
+        System.out.println("1 - Añadir nuevo cliente");
+        System.out.println("2 - Modificar datos");
+        System.out.println("3 - Dar de baja cliente");
+        System.out.println("4 - Listar los clientes");
+        System.out.println("5 - Salir");
         System.out.println("**************************************");
     }
     
